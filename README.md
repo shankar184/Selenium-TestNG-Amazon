@@ -8,6 +8,8 @@
 ✅ Dynamic browser name displayed in Extent Reports
 ✅ Parallel execution ready (can be extended easily)
 ✅ Clean src/main/java for core utilities and src/test/java for tests
+✅ GitHub Actions CI integration
+✅ Selenium Grid support for distributed test execution
 
 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
 
@@ -44,3 +46,5 @@ Ensure mvn is installed and configured in your terminal._
 ┃ ┗ 📁 java
 ┃   ┣ 📁 Tests        # All TestNG test classes
 ┃   ┗ 📁 utils        # ScreenshotUtils, ExtentTestListener
+
+![GitHub Workflow Status](https://github.com/shankar184/Selenium-TestNG-Amazon/actions/workflows/selenium.yml/badge.svg?branch=develop)
