@@ -31,6 +31,7 @@ public class BaseTest {
     public void setup(String browser ){
         String[] parts = browser.split(":");
         browserName = parts[0];
+        boolean isCI = System.getenv("GITHUB_ACTIONS") != null;
         boolean runOnGrid = Boolean.parseBoolean(parts[1]);
         try {
             if (runOnGrid){
@@ -60,16 +61,22 @@ public class BaseTest {
                 switch (browserName.toLowerCase()) {
                     case "firefox":
                         WebDriverManager.firefoxdriver().setup();
-                        driver = new FirefoxDriver();
+                        FirefoxOptions fireFoxOptions = new FirefoxOptions();
+                        fireFoxOptions.addArguments("--headless");
+                        driver = new FirefoxDriver(fireFoxOptions);
                         break;
                     case "edge":
                         WebDriverManager.edgedriver().setup();
-                        driver = new EdgeDriver();
+                        EdgeOptions edgeOptions = new EdgeOptions();
+                        edgeOptions.addArguments("--headless");
+                        driver = new EdgeDriver(edgeOptions);
                         break;
                     case "chrome":
                     default:
                         WebDriverManager.chromedriver().setup();
-                        driver = new ChromeDriver();
+                        ChromeOptions options = new ChromeOptions();
+                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+                        driver = new ChromeDriver(options);
                         break;
                 }
             }

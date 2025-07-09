@@ -59,6 +59,7 @@ public class ExtentTestListener extends BaseTest implements ITestListener {
         } else {
             test.get().log(Status.WARNING, "Driver is null. Screenshot skipped.");
         }
+        System.out.println("Test failed: " + result.getThrowable());
     }
 
     @Override
