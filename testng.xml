@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.testng.reporters.XMLReporter"/>
+        <listener class-name="utils.ExtentTestListener"/>
+    </listeners>
+
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome:false"/>
+
+        <classes>
+            <class name="Tests.AmazonHomeTest">
+                <methods>
+                    <include name="AmazonSearch"/>
+                    <include name="addToCartNavigation"/>
+                    <include name="navigationToOrdersPage"/>
+                    <include name="scrollTheAmazonPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox:false"/>
+
+        <classes>
+            <class name="Tests.AmazonHomeTest">
+                <methods>
+                    <include name="AmazonSearch"/>
+                    <include name="addToCartNavigation"/>
+                    <include name="navigationToOrdersPage"/>
+                    <include name="scrollTheAmazonPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="EdgeTest">
+        <parameter name="browser" value="edge:false"/>
+
+        <classes>
+            <class name="Tests.AmazonHomeTest">
+                <methods>
+                    <include name="AmazonSearch"/>
+                    <include name="addToCartNavigation"/>
+                    <include name="navigationToOrdersPage"/>
+                    <include name="scrollTheAmazonPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

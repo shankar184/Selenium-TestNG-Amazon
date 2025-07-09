@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-09T20:03:30 IST" name="All Test Suite" finished-at="2025-07-09T20:06:01 IST" duration-ms="150768">
+    <groups>
+    </groups>
+    <test started-at="2025-07-09T20:03:30 IST" name="ChromeTest" finished-at="2025-07-09T20:04:31 IST" duration-ms="61346">
+      <class name="Tests.AmazonHomeTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:03:30 IST" name="setup" finished-at="2025-07-09T20:03:45 IST" duration-ms="15041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:03:45 IST" name="setUpPageObjects" finished-at="2025-07-09T20:03:45 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="AmazonSearch()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:03:45 IST" name="AmazonSearch" description="click on the search field and search the product" finished-at="2025-07-09T20:03:50 IST" duration-ms="4762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:03:50 IST" name="tearDown" finished-at="2025-07-09T20:03:50 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:03:50 IST" name="setup" finished-at="2025-07-09T20:03:59 IST" duration-ms="8567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:03:59 IST" name="setUpPageObjects" finished-at="2025-07-09T20:03:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="addToCartNavigation()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:03:59 IST" name="addToCartNavigation" description="navigation to add to cart button" finished-at="2025-07-09T20:04:01 IST" duration-ms="1886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:04:01 IST" name="tearDown" finished-at="2025-07-09T20:04:01 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:04:01 IST" name="setup" finished-at="2025-07-09T20:04:14 IST" duration-ms="12960" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:04:14 IST" name="setUpPageObjects" finished-at="2025-07-09T20:04:14 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="navigationToOrdersPage()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:04:14 IST" name="navigationToOrdersPage" description="navigation to past orders page" finished-at="2025-07-09T20:04:18 IST" duration-ms="3448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigationToOrdersPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:04:18 IST" name="tearDown" finished-at="2025-07-09T20:04:18 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:04:18 IST" name="setup" finished-at="2025-07-09T20:04:30 IST" duration-ms="11914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:04:30 IST" name="setUpPageObjects" finished-at="2025-07-09T20:04:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="scrollTheAmazonPage()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:04:30 IST" name="scrollTheAmazonPage" description="Scroll the amazon page" finished-at="2025-07-09T20:04:31 IST" duration-ms="1288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollTheAmazonPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@72d6b3ba]" started-at="2025-07-09T20:04:31 IST" name="tearDown" finished-at="2025-07-09T20:04:31 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.AmazonHomeTest -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-07-09T20:04:32 IST" name="FirefoxTest" finished-at="2025-07-09T20:05:18 IST" duration-ms="46820">
+      <class name="Tests.AmazonHomeTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:04:32 IST" name="setup" finished-at="2025-07-09T20:04:40 IST" duration-ms="8348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:04:40 IST" name="setUpPageObjects" finished-at="2025-07-09T20:04:40 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="AmazonSearch()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:04:40 IST" name="AmazonSearch" description="click on the search field and search the product" finished-at="2025-07-09T20:04:41 IST" duration-ms="1560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:04:42 IST" name="tearDown" finished-at="2025-07-09T20:04:43 IST" duration-ms="1006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:04:43 IST" name="setup" finished-at="2025-07-09T20:04:50 IST" duration-ms="7474" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:04:50 IST" name="setUpPageObjects" finished-at="2025-07-09T20:04:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="addToCartNavigation()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:04:50 IST" name="addToCartNavigation" description="navigation to add to cart button" finished-at="2025-07-09T20:04:51 IST" duration-ms="1321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:04:52 IST" name="tearDown" finished-at="2025-07-09T20:04:52 IST" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:04:52 IST" name="setup" finished-at="2025-07-09T20:05:04 IST" duration-ms="12091" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:05:04 IST" name="setUpPageObjects" finished-at="2025-07-09T20:05:04 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="navigationToOrdersPage()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:05:04 IST" name="navigationToOrdersPage" description="navigation to past orders page" finished-at="2025-07-09T20:05:08 IST" duration-ms="3530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigationToOrdersPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:05:08 IST" name="tearDown" finished-at="2025-07-09T20:05:08 IST" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:05:08 IST" name="setup" finished-at="2025-07-09T20:05:17 IST" duration-ms="8648" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:05:17 IST" name="setUpPageObjects" finished-at="2025-07-09T20:05:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="scrollTheAmazonPage()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:05:17 IST" name="scrollTheAmazonPage" description="Scroll the amazon page" finished-at="2025-07-09T20:05:18 IST" duration-ms="1038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollTheAmazonPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@3fc79729]" started-at="2025-07-09T20:05:18 IST" name="tearDown" finished-at="2025-07-09T20:05:18 IST" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.AmazonHomeTest -->
+    </test> <!-- FirefoxTest -->
+    <test started-at="2025-07-09T20:05:18 IST" name="EdgeTest" finished-at="2025-07-09T20:06:01 IST" duration-ms="42423">
+      <class name="Tests.AmazonHomeTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:18 IST" name="setup" finished-at="2025-07-09T20:05:26 IST" duration-ms="7307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:26 IST" name="setUpPageObjects" finished-at="2025-07-09T20:05:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="AmazonSearch()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:26 IST" name="AmazonSearch" description="click on the search field and search the product" finished-at="2025-07-09T20:05:29 IST" duration-ms="3065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:29 IST" name="tearDown" finished-at="2025-07-09T20:05:29 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:29 IST" name="setup" finished-at="2025-07-09T20:05:39 IST" duration-ms="9515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:39 IST" name="setUpPageObjects" finished-at="2025-07-09T20:05:39 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="addToCartNavigation()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:39 IST" name="addToCartNavigation" description="navigation to add to cart button" finished-at="2025-07-09T20:05:40 IST" duration-ms="1439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:40 IST" name="tearDown" finished-at="2025-07-09T20:05:40 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:40 IST" name="setup" finished-at="2025-07-09T20:05:48 IST" duration-ms="7443" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:48 IST" name="setUpPageObjects" finished-at="2025-07-09T20:05:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="navigationToOrdersPage()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:48 IST" name="navigationToOrdersPage" description="navigation to past orders page" finished-at="2025-07-09T20:05:49 IST" duration-ms="1384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigationToOrdersPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:49 IST" name="tearDown" finished-at="2025-07-09T20:05:50 IST" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:50 IST" name="setup" finished-at="2025-07-09T20:05:59 IST" duration-ms="9557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge:false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:59 IST" name="setUpPageObjects" finished-at="2025-07-09T20:05:59 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="scrollTheAmazonPage()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:05:59 IST" name="scrollTheAmazonPage" description="Scroll the amazon page" finished-at="2025-07-09T20:06:00 IST" duration-ms="1237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollTheAmazonPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonHomeTest@7ef27d7f]" started-at="2025-07-09T20:06:01 IST" name="tearDown" finished-at="2025-07-09T20:06:01 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.AmazonHomeTest -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

@@ -1,0 +1,15 @@
+<suite name="Grid Suite" parallel="methods" thread-count="3">
+    <test name="Amazon Grid Chrome">
+        <parameter name="browser" value="chrome:true"/>
+        <classes>
+            <class name="Tests.AmazonHomeTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="Amazon Grid Firefox">-->
+<!--        <parameter name="browserConfig" value="firefox:true"/>-->
+<!--        <classes>-->
+<!--            <class name="Tests.AmazonHomeTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
