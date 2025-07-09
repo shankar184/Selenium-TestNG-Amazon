@@ -34,13 +34,20 @@ Ensure mvn is installed and configured in your terminal._
 
 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
 
-📁 src
-┣ 📁 main
-┃ ┗ 📁 java
-┃   ┣ 📁 base         # BaseTest class (browser setup)
-┃   ┣ 📁 pages        # All Page Object classes
-┃   ┗ 📁 utils        # WaitUtils, ExtentManager
-┣ 📁 test
-┃ ┗ 📁 java
-┃   ┣ 📁 Tests        # All TestNG test classes
-┃   ┗ 📁 utils        # ScreenshotUtils, ExtentTestListener
+## 🧱 Project Structure
+
+Selenium-TestNG-Amazon/
+├── src/
+│ ├── main/
+│ │ └── java/
+│ │ └── utils/ # Core utilities (e.g., WaitUtils, ScreenshotUtils)
+│ └── test/
+│ └── java/
+│ ├── base/ # BaseTest class
+│ ├── pages/ # Page Object Models
+│ ├── tests/ # TestNG Test Classes
+│ └── utils/ # Test-specific utils like ExtentTestListener
+├── reports/ # ExtentReports output
+├── testng.xml # Test suite config
+├── pom.xml # Maven dependencies & plugins
+└── README.md # Project documentation
