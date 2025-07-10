@@ -11,6 +11,8 @@
 ✅ GitHub Actions CI integration
 ✅ Selenium Grid support for distributed test execution
 ✅ Allure Reports Integration
+✅ Seamlessly integrated Selenium TestNG automation with Jenkins CI 
+   and Allure Reporting for blazing-fast feedback and crystal-clear test insights.
 
 
 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
