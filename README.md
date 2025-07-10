@@ -10,6 +10,8 @@
 ✅ Clean src/main/java for core utilities and src/test/java for tests
 ✅ GitHub Actions CI integration
 ✅ Selenium Grid support for distributed test execution
+✅ Allure Reports Integration
+
 
 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
 
