@@ -53,11 +53,11 @@ public class AmazonHomePage {
 
     public void searchProducts(String productName){
         waitUtils.waitForElementToBeClickable(searchProduct,5).click();
-        waitUtils.waitForElementToBeClickable( searchProduct,3).sendKeys(productName+ Keys.ENTER);
+        waitUtils.waitForElementToBeClickable( searchProduct,5).sendKeys(productName+ Keys.ENTER);
     }
 
     public void addToCartScreen(){
-        waitUtils.waitForElementToBeVisible(addCartBtn,3).click();
+        waitUtils.waitForElementToBeVisible(addCartBtn,6).click();
     }
 
     public void pastOrderPage(){
