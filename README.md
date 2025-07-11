@@ -13,6 +13,8 @@
 ✅ Allure Reports Integration
 ✅ Seamlessly integrated Selenium TestNG automation with Jenkins CI 
    and Allure Reporting for blazing-fast feedback and crystal-clear test insights.
+✅ CI/CD Powered by Jenkins + Slack Webhooks — Get real-time build alerts 
+   straight to Slack! Stay informed on every success ✅ and failure ❌, instantly.
 
 
 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
