@@ -62,20 +62,20 @@ public class BaseTest {
                     case "firefox":
                         WebDriverManager.firefoxdriver().setup();
                         FirefoxOptions fireFoxOptions = new FirefoxOptions();
-//                        fireFoxOptions.addArguments("--headless");
+                        fireFoxOptions.addArguments("--headless");
                         driver = new FirefoxDriver(fireFoxOptions);
                         break;
                     case "edge":
                         WebDriverManager.edgedriver().setup();
                         EdgeOptions edgeOptions = new EdgeOptions();
-//                        edgeOptions.addArguments("--headless");
+                        edgeOptions.addArguments("--headless");
                         driver = new EdgeDriver(edgeOptions);
                         break;
                     case "chrome":
                     default:
                         WebDriverManager.chromedriver().setup();
                         ChromeOptions options = new ChromeOptions();
-//                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
                         driver = new ChromeDriver(options);
                         break;
                 }
