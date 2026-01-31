@@ -15,49 +15,46 @@ import java.net.URL;
 
 public class BaseTest {
     protected static WebDriver driver;
-    protected static  String browserName;
+    protected static String browserName;
 
     public WebDriver getDriver() {
         return driver;
     }
-    public static String getBrowserName(){
+
+    public static String getBrowserName() {
         return browserName;
     }
 
-
-
     @Parameters("browser")
     @BeforeMethod
-    public void setup(String browser ){
+    public void setup(@Optional("chrome:false") String browser) {
         String[] parts = browser.split(":");
         browserName = parts[0];
-        boolean isCI = System.getenv("GITHUB_ACTIONS") != null;
         boolean runOnGrid = Boolean.parseBoolean(parts[1]);
+
         try {
-            if (runOnGrid){
-
-//            run tests on Selenium Grid
+            if (runOnGrid) {
+                // Run tests on Selenium Grid
                 switch (browserName.toLowerCase()) {
-                case "firefox":
-                    FirefoxOptions firefoxOptions = new FirefoxOptions();
-                    firefoxOptions.addArguments("--headless");
-                    driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),firefoxOptions);
-                    break;
+                    case "firefox":
+                        FirefoxOptions firefoxOptions = new FirefoxOptions();
+                        firefoxOptions.addArguments("--headless");
+                        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), firefoxOptions);
+                        break;
 
-                case "edge":
-                    EdgeOptions edgeOptions = new EdgeOptions();
-                    driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),edgeOptions);
-                    break;
+                    case "edge":
+                        EdgeOptions edgeOptions = new EdgeOptions();
+                        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), edgeOptions);
+                        break;
 
-                case "chrome":
-                default:
-                ChromeOptions chromeOptions= new ChromeOptions();
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),chromeOptions);
-                break;
+                    case "chrome":
+                    default:
+                        ChromeOptions chromeOptions = new ChromeOptions();
+                        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
+                        break;
                 }
-            }
-            else {
-                //Run tests locally
+            } else {
+                // Run tests locally
                 switch (browserName.toLowerCase()) {
                     case "firefox":
                         WebDriverManager.firefoxdriver().setup();
@@ -65,35 +62,36 @@ public class BaseTest {
                         fireFoxOptions.addArguments("--headless");
                         driver = new FirefoxDriver(fireFoxOptions);
                         break;
+
                     case "edge":
                         WebDriverManager.edgedriver().setup();
                         EdgeOptions edgeOptions = new EdgeOptions();
                         edgeOptions.addArguments("--headless");
                         driver = new EdgeDriver(edgeOptions);
                         break;
+
                     case "chrome":
                     default:
                         WebDriverManager.chromedriver().setup();
                         ChromeOptions options = new ChromeOptions();
-                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
-                        driver = new ChromeDriver(options);
+//                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+                        driver = new ChromeDriver();
                         break;
                 }
             }
         } catch (Exception e) {
-            throw new RuntimeException("Grid url is malformed",e);
+            throw new RuntimeException("Grid URL is malformed or browser setup failed", e);
         }
 
         driver.manage().window().maximize();
-        driver.get("https://www.amazon.in/");
-
+//        driver.get("https://www.amazon.in/");
+        driver.get("https://ui.shadcn.com/docs/components/dropdown-menu");
     }
 
     @AfterMethod
     public void tearDown() {
-        if (driver !=null){
+        if (driver != null) {
             driver.quit();
         }
-
     }
 }

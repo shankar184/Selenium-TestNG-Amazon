@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import base.BaseTest;
 import io.qameta.allure.*;
@@ -11,7 +11,7 @@ import utils.ExtentTestListener;
 
 @Listeners(ExtentTestListener.class)
 @Epic("Amazon Application")
-@Feature("Amazon Homepage Functional Tests")
+@Feature("Amazon Homepage Functional tests")
 public class AmazonHomeTest extends BaseTest {
 
     AmazonHomePage homePage;
