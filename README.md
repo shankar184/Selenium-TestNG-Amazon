@@ -8,6 +8,14 @@
 ✅ Dynamic browser name displayed in Extent Reports
 ✅ Parallel execution ready (can be extended easily)
 ✅ Clean src/main/java for core utilities and src/test/java for tests
+✅ GitHub Actions CI integration
+✅ Selenium Grid support for distributed test execution
+✅ Allure Reports Integration
+✅ Seamlessly integrated Selenium TestNG automation with Jenkins CI 
+   and Allure Reporting for blazing-fast feedback and crystal-clear test insights.
+✅ CI/CD Powered by Jenkins + Slack Webhooks — Get real-time build alerts 
+   straight to Slack! Stay informed on every success ✅ and failure ❌, instantly.
+
 
 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
 
@@ -34,20 +42,15 @@ Ensure mvn is installed and configured in your terminal._
 
 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
 
-## 🧱 Project Structure
+📁 src
+┣ 📁 main
+┃ ┗ 📁 java
+┃   ┣ 📁 base         # BaseTest class (browser setup)
+┃   ┣ 📁 pages        # All Page Object classes
+┃   ┗ 📁 utils        # WaitUtils, ExtentManager
+┣ 📁 test
+┃ ┗ 📁 java
+┃   ┣ 📁 Tests        # All TestNG test classes
+┃   ┗ 📁 utils        # ScreenshotUtils, ExtentTestListener
 
-Selenium-TestNG-Amazon/
-├── src/
-│ ├── main/
-│ │ └── java/
-│ │ └── utils/ # Core utilities (e.g., WaitUtils, ScreenshotUtils)
-│ └── test/
-│ └── java/
-│ ├── base/ # BaseTest class
-│ ├── pages/ # Page Object Models
-│ ├── tests/ # TestNG Test Classes
-│ └── utils/ # Test-specific utils like ExtentTestListener
-├── reports/ # ExtentReports output
-├── testng.xml # Test suite config
-├── pom.xml # Maven dependencies & plugins
-└── README.md # Project documentation
+![GitHub Workflow Status](https://github.com/shankar184/Selenium-TestNG-Amazon/actions/workflows/selenium.yml/badge.svg?branch=develop)

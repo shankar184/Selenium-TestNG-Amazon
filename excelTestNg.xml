@@ -1,0 +1,7 @@
+<suite name ="Excel Suite">
+    <test name="Excel tests">
+        <classes>
+            <class name ="tests.ExcelDrivenTest"/>
+        </classes>
+    </test>
+</suite>

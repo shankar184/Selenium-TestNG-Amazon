@@ -30,26 +30,55 @@ public class ExtentTestListener extends BaseTest implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         WebDriver driver = getDriverFromResult(result);
-        String screenshotPath = ScreenshotUtils.captureScreenshot(driver, result.getMethod().getMethodName());
         test.get().log(Status.PASS, "Test passed");
-        test.get().addScreenCaptureFromPath(screenshotPath);
+
+        if (driver != null) {
+            try {
+                String screenshotPath = ScreenshotUtils.captureScreenshot(driver, result.getMethod().getMethodName());
+                test.get().addScreenCaptureFromPath(screenshotPath);
+            } catch (Exception e) {
+                test.get().log(Status.INFO, "Screenshot could not be attached.");
+            }
+        } else {
+            test.get().log(Status.WARNING, "Driver is null. Screenshot skipped.");
+        }
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         WebDriver driver = getDriverFromResult(result);
-        String screenshotPath = ScreenshotUtils.captureScreenshot(driver, result.getMethod().getMethodName());
         test.get().log(Status.FAIL, "Test failed: " + result.getThrowable());
-        test.get().addScreenCaptureFromPath(screenshotPath);
+
+        if (driver != null) {
+            try {
+                String screenshotPath = ScreenshotUtils.captureScreenshot(driver, result.getMethod().getMethodName());
+                test.get().addScreenCaptureFromPath(screenshotPath);
+            } catch (Exception e) {
+                test.get().log(Status.INFO, "Screenshot could not be attached.");
+            }
+        } else {
+            test.get().log(Status.WARNING, "Driver is null. Screenshot skipped.");
+        }
+        System.out.println("Test failed: " + result.getThrowable());
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
         WebDriver driver = getDriverFromResult(result);
-        String screenshotPath = ScreenshotUtils.captureScreenshot(driver, result.getMethod().getMethodName());
         test.get().log(Status.SKIP, "Test skipped");
-        test.get().addScreenCaptureFromPath(screenshotPath);
+
+        if (driver != null) {
+            try {
+                String screenshotPath = ScreenshotUtils.captureScreenshot(driver, result.getMethod().getMethodName());
+                test.get().addScreenCaptureFromPath(screenshotPath);
+            } catch (Exception e) {
+                test.get().log(Status.INFO, "Screenshot could not be attached.");
+            }
+        } else {
+            test.get().log(Status.WARNING, "Driver is null. Screenshot skipped.");
+        }
     }
+
 
     @Override
     public void onFinish(ITestContext context) {
